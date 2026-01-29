@@ -14,23 +14,109 @@
 
             main {
                 display: flex;
-                flex-direction: column;
+                min-height: 100vh;
+                justify-content: center;
                 align-items: center;
+                gap: 1rem;
             }
 
             img {
                 height: 10rem;
+            }
+
+            .buttons {
+                display: flex;
+                gap: 1rem;
+            }
+
+            .discord_button {
+                background: rgb(32, 69, 138);
+                padding: .5rem 1rem;
+                width: 8rem;
+                color: #fff;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                gap: .8rem
+            }
+
+            .discord_button:hover {
+                background: rgb(43, 83, 156);
+            }
+
+            .cyberspace_button {
+                background-color: #eae4db;
+                padding: .5rem 1rem;
+                width: 8rem;
+                color: #111;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                gap: .8rem
+
+            }
+
+            .cyberspace_button:hover {
+                background-color: #d5d1cd;
+            }
+
+            section {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            .chistosos {
+                color: red;
+                overflow: hidden; 
+                border-right: .15em solid orange; 
+                white-space: nowrap;
+                margin: 0 auto; 
+                letter-spacing: .15em; 
+                animation: 
+                    typing 3.5s steps(40, end),
+                    blink-caret .75s step-end infinite;
+            }
+
+            @keyframes typing {
+                from { width: 0 }
+                to { width: 100% }
+            }
+
+            @keyframes blink-caret {
+                from, to { border-color: transparent }
+                50% { border-color: orange; }
             }
 		</style>
 	</head>
 
 	<body>
         <main>
-            <h1>Bienvenido al server de ATO</h1>
-            <img src="./atoimagenahorasiesenserio.png" alt="">
-            <div class="discord_button">
-                <a href="https://discord.gg/kayau4QpYH">Discord</a>
-            </div>
+            <figcaption>
+                <img src="./atoimagenahorasiesenserio.png" alt="">
+
+            </figcaption>
+            <section>
+                <h1>Bienvenido al server de ATO</h1>
+                <div class="buttons">
+                    <a href="https://discord.gg/kayau4QpYH" class="discord_button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-discord" viewBox="0 0 16 16">
+                           <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
+                        </svg>
+                        <span>
+                            Discord
+                        </span>
+                    </a>
+                    <a href="https://cyberspace.online/guilds/ato" class="cyberspace_button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20a14.5 14.5 0 0 0 0-20M2 12h20"/></g></svg>
+                        <span>Cyberspace</span>
+                    </a>
+                </div>
+                <p class="chistosos">NO APTO PARA CHISTOSOS</p>
+
+            </section>
         </main>
 	</body>
 </html>
