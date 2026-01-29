@@ -2,6 +2,9 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap" rel="stylesheet">
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 		<title>Welcome to this shit called ATO</title>
 		<style type="text/css">
@@ -10,6 +13,7 @@
 				margin: 0;
 				padding: 0;
                 overflow: hidden;
+                background-color: #fff;
 			}
 
             main {
@@ -17,7 +21,6 @@
                 min-height: 100vh;
                 justify-content: center;
                 align-items: center;
-                gap: 1rem;
             }
 
             img {
@@ -61,6 +64,7 @@
             }
 
             section {
+                width: 30rem;
                 display: flex;
                 flex-direction: column;
                 gap: 1rem;
@@ -71,23 +75,37 @@
             .chistosos {
                 color: red;
                 overflow: hidden; 
-                border-right: .15em solid #111#; 
+                border-right: .15em solid #111; 
                 white-space: nowrap;
                 margin: 0 auto; 
                 letter-spacing: .15em; 
                 animation: 
-                    typing 3.5s steps(10, end),
+                    typing 3.5s steps(40, end),
                     blink-caret .75s step-end infinite;
             }
 
             @keyframes typing {
                 from { width: 0 }
-                to { width: 70% }
+                to { width: 50% }
             }
 
             @keyframes blink-caret {
                 from, to { border-color: transparent }
                 50% { border-color: orange; }
+            }
+
+            h1 {
+                text-align: center;
+                width: 80%;
+                font-family: "Bitcount Single", system-ui;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                font-variation-settings:
+                    "slnt" 0,
+                    "CRSV" 0.5,
+                    "ELSH" 0,
+                    "ELXP" 0;
             }
 		</style>
 	</head>
